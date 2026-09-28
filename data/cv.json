@@ -1,0 +1,279 @@
+{
+  "lang": "en",
+  "basics": {
+    "name": "Dmitry Leiko",
+    "headline": "Senior Backend Engineer · PHP / Python · Zend Certified Engineer",
+    "summary": "Backend engineer, 10+ years: PHP/Symfony and Python/Django. Since 2023 — microservices for one of the largest online retailers in Belarus: I design around DDD and own a service from its domain model to production on Kubernetes.",
+    "photo": "assets/photo.jpeg",
+    "location": "Minsk, Belarus · Open to remote or relocation",
+    "email": "dmitri.leiko@gmail.com",
+    "phone": "+375 29 578-4884",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/LeikoDmitry",
+        "display": "github.com/LeikoDmitry"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/dmitry-liaiko-75270960/",
+        "display": "linkedin.com/in/dmitry-liaiko"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Triovist LLC (21vek.by)",
+      "role": "Senior Software Engineer",
+      "location": "Minsk",
+      "from": "2023-01",
+      "to": "present",
+      "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
+      "bullets": [
+        "Build new microservices and maintain existing ones, modelling each around its business domain with Domain-Driven Design so services stay changeable as catalogue and order rules evolve.",
+        "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
+        "Own services end to end: Symfony/PHP on MySQL and Redis, Kafka for inter-service messaging, shipped on Docker and Kubernetes.",
+        "Apply the maintainability practices the team relies on for long-lived code — layered domain models, explicit boundaries between services, and code review.",
+        "Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.",
+        "Write Python tooling for analytics and data processing — pandas pipelines for reporting and ad-hoc analysis, scheduled and orchestrated with Airflow."
+      ],
+      "stack": [
+        "PHP",
+        "Python",
+        "pandas",
+        "Airflow",
+        "Symfony",
+        "MySQL",
+        "Redis",
+        "Kafka",
+        "Kubernetes",
+        "Docker",
+        "Next.js",
+        "DDD"
+      ]
+    },
+    {
+      "company": "hoster.by",
+      "role": "Senior Backend Developer",
+      "location": "Minsk",
+      "from": "2021-10",
+      "to": "2023-01",
+      "context": "Belarusian hosting, domain and cloud-services provider.",
+      "bullets": [
+        "Extended the customer account area, where clients manage their hosting, domains and other services.",
+        "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.",
+        "Worked on a PHP/MySQL stack with ClickHouse for analytical queries, Redis caching, REST APIs and a Vue.js frontend, containerised with Docker."
+      ],
+      "stack": [
+        "PHP",
+        "MySQL",
+        "ClickHouse",
+        "Redis",
+        "REST API",
+        "Vue.js",
+        "Docker"
+      ]
+    },
+    {
+      "company": "EffectiveSoft",
+      "role": "Senior Backend Developer",
+      "location": "Minsk",
+      "from": "2020-10",
+      "to": "2021-10",
+      "context": "Custom software development company delivering client projects.",
+      "bullets": [
+        "Estimated incoming work, built new functionality and evolved existing client projects in PHP (Symfony, Laravel) and Python.",
+        "Planned and distributed tasks for junior engineers on the team."
+      ],
+      "stack": [
+        "PHP",
+        "Symfony",
+        "Laravel",
+        "Python",
+        "MySQL",
+        "WordPress"
+      ]
+    },
+    {
+      "company": "Itransition",
+      "role": "Software Engineer",
+      "location": "Minsk",
+      "from": "2017-10",
+      "to": "2020-10",
+      "context": "International software engineering and IT-consulting firm.",
+      "bullets": [
+        "Built projects from scratch and extended existing ones for enterprise clients across PHP (Symfony), Python and MySQL.",
+        "Delivered e-commerce work on WordPress/WooCommerce alongside custom application development."
+      ],
+      "stack": [
+        "PHP",
+        "Symfony",
+        "Python",
+        "MySQL",
+        "WooCommerce",
+        "JavaScript"
+      ]
+    },
+    {
+      "company": "Zaochnik.com",
+      "role": "PHP Developer",
+      "location": "Minsk",
+      "from": "2015-11",
+      "to": "2017-10",
+      "context": "Online education marketplace.",
+      "bullets": [
+        "Supported the company's products and resolved production failures promptly.",
+        "Integrated external services over APIs; worked across PHP (Laminas), MySQL and Python/Django."
+      ],
+      "stack": [
+        "PHP",
+        "Laminas",
+        "MySQL",
+        "Python",
+        "Django",
+        "WordPress"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "role": "Frontend Developer",
+      "location": "Minsk",
+      "from": "2012-02",
+      "to": "2015-02",
+      "context": "Independent contracting for web studios and direct clients.",
+      "bullets": [
+        "Built HTML/CSS templates from PSD designs of varying complexity, from landing pages to multi-page company sites."
+      ],
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "find-apartment",
+      "url": "https://github.com/LeikoDmitry/find-apartment",
+      "blurb": "Rental-listing scanner for Kufar and Realt.by that de-duplicates against SQLite and pushes only unseen listings to Telegram with photos and coordinates; price and room filters are changed live by chat command.",
+      "bullets": [
+        "Runs on a 10-minute schedule in Docker; a single-poller guard turns Telegram 409 conflicts into a clear startup refusal instead of silent message loss.",
+        "Typed and linted end to end — mypy, Ruff, and a GitHub Actions test and image-publish pipeline on every push."
+      ],
+      "stack": [
+        "Python 3.12",
+        "SQLite",
+        "Telegram Bot API",
+        "Docker",
+        "GitHub Actions",
+        "mypy",
+        "Ruff"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "group": "Languages",
+      "items": [
+        "PHP 8",
+        "Python 3",
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    {
+      "group": "Frameworks",
+      "items": [
+        "Symfony",
+        "Laravel",
+        "Laminas",
+        "Django"
+      ]
+    },
+    {
+      "group": "Frontend",
+      "items": [
+        "Vue.js",
+        "Next.js",
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "group": "Architecture",
+      "items": [
+        "Domain-Driven Design",
+        "SOLID",
+        "Microservices",
+        "REST APIs"
+      ]
+    },
+    {
+      "group": "Data",
+      "items": [
+        "MySQL",
+        "ClickHouse",
+        "Redis",
+        "SQLite",
+        "pandas"
+      ]
+    },
+    {
+      "group": "Infrastructure",
+      "items": [
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "Kafka",
+        "Airflow",
+        "Linux",
+        "Git",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "group": "AI tooling",
+      "items": [
+        "Claude Code",
+        "Skills & plugins",
+        "MCP integrations",
+        "LLM-assisted code review"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Zend Certified Engineer — Rogue Wave Software",
+      "year": "2018"
+    },
+    {
+      "name": "PHP Developer — High-Tech Park, Minsk",
+      "year": "2014"
+    }
+  ],
+  "education": [
+    {
+      "school": "Minsk State Professional Lyceum of Mechanical Engineering",
+      "degree": "Bachelor's degree, Mechanical engineering",
+      "from": "2001",
+      "to": "2004",
+      "note": ""
+    }
+  ],
+  "languages": [
+    {
+      "name": "Belarusian",
+      "level": "Native"
+    },
+    {
+      "name": "Russian",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "B2 — Upper-intermediate"
+    }
+  ]
+}

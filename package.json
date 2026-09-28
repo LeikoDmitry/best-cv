@@ -1,0 +1,10 @@
+{
+  "name": "cv",
+  "private": true,
+  "type": "module",
+  "description": "Dmitry Leiko CV - data in JSON, layout in print CSS, PDF printed by headless Chrome.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "pages": "node scripts/pagecount.mjs"
+  }
+}

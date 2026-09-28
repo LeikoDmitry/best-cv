@@ -1,0 +1,279 @@
+{
+  "lang": "ru",
+  "basics": {
+    "name": "Лейко Дмитрий",
+    "headline": "Senior backend-разработчик · PHP / Python · Zend Certified Engineer",
+    "summary": "Backend-разработчик, 10+ лет: PHP/Symfony и Python/Django. С 2023 года — микросервисы для одного из крупнейших интернет-ритейлеров Беларуси: проектирую по DDD, веду сервис от доменной модели до продакшена в Kubernetes.",
+    "photo": "assets/photo.jpeg",
+    "location": "Минск, Беларусь · Готов к удалённой работе и переезду",
+    "email": "dmitri.leiko@gmail.com",
+    "phone": "+375 29 578-4884",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/LeikoDmitry",
+        "display": "github.com/LeikoDmitry"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/dmitry-liaiko-75270960/",
+        "display": "linkedin.com/in/dmitry-liaiko"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "ООО «Триовист» (21vek.by)",
+      "role": "Инженер-программист",
+      "location": "Минск",
+      "from": "2023-01",
+      "to": "present",
+      "context": "Один из крупнейших интернет-ритейлеров Беларуси: электроника, бытовая техника, маркетплейс.",
+      "bullets": [
+        "Создаю новые микросервисы и развиваю существующие, проектируя каждый вокруг своей предметной области (DDD), чтобы сервисы оставались изменяемыми по мере роста каталога и усложнения правил заказа.",
+        "Работаю в основном с доменом корзины и доставки: наполнение корзины и расчёт стоимости с учётом промокодов, подбор доступных способов доставки и интервалов при оформлении заказа.",
+        "Веду сервисы целиком: Symfony/PHP на MySQL и Redis, Kafka для межсервисного обмена, поставка через Docker и Kubernetes.",
+        "Применяю практики, на которых держится долгоживущий код: слоистая доменная модель, явные границы между сервисами, код-ревью.",
+        "Применяю AI-инструменты в ежедневной разработке: Claude Code для генерации и ревью кода и быстрого погружения в незнакомые части системы — с собственными скиллами и плагинами и подключением внутренних и внешних инструментов по MCP.",
+        "Пишу на Python инструменты для аналитики и обработки данных: pandas-пайплайны для отчётов и разовых разборов, расписание и оркестрация — на Airflow."
+      ],
+      "stack": [
+        "PHP",
+        "Python",
+        "pandas",
+        "Airflow",
+        "Symfony",
+        "MySQL",
+        "Redis",
+        "Kafka",
+        "Kubernetes",
+        "Docker",
+        "Next.js",
+        "DDD"
+      ]
+    },
+    {
+      "company": "hoster.by",
+      "role": "Senior Backend Developer",
+      "location": "Минск",
+      "from": "2021-10",
+      "to": "2023-01",
+      "context": "Белорусский провайдер хостинга, доменов и облачных сервисов.",
+      "bullets": [
+        "Дорабатывал личный кабинет клиента: разделы управления услугами, хостингом и доменами.",
+        "Интегрировал сторонние API с внутренними сервисами так, чтобы изменения на стороне провайдеров не задевали зависящие от них продукты.",
+        "Работал со стеком PHP/MySQL: ClickHouse для аналитических запросов, кэш на Redis, REST API и фронтенд на Vue.js, всё в Docker."
+      ],
+      "stack": [
+        "PHP",
+        "MySQL",
+        "ClickHouse",
+        "Redis",
+        "REST API",
+        "Vue.js",
+        "Docker"
+      ]
+    },
+    {
+      "company": "EffectiveSoft",
+      "role": "Senior Backend Developer",
+      "location": "Минск",
+      "from": "2020-10",
+      "to": "2021-10",
+      "context": "Заказная разработка программного обеспечения.",
+      "bullets": [
+        "Оценивал задачи, разрабатывал новый функционал и развивал существующие проекты заказчиков на PHP (Symfony, Laravel) и Python.",
+        "Планировал и распределял задачи между младшими разработчиками."
+      ],
+      "stack": [
+        "PHP",
+        "Symfony",
+        "Laravel",
+        "Python",
+        "MySQL",
+        "WordPress"
+      ]
+    },
+    {
+      "company": "Itransition",
+      "role": "Инженер-программист",
+      "location": "Минск",
+      "from": "2017-10",
+      "to": "2020-10",
+      "context": "Международная компания по разработке ПО и ИТ-консалтингу.",
+      "bullets": [
+        "Создавал проекты с нуля и дорабатывал существующие для корпоративных заказчиков на PHP (Symfony), Python и MySQL.",
+        "Делал e-commerce на WordPress/WooCommerce параллельно с заказной разработкой."
+      ],
+      "stack": [
+        "PHP",
+        "Symfony",
+        "Python",
+        "MySQL",
+        "WooCommerce",
+        "JavaScript"
+      ]
+    },
+    {
+      "company": "Zaochnik.com",
+      "role": "PHP-разработчик",
+      "location": "Минск",
+      "from": "2015-11",
+      "to": "2017-10",
+      "context": "Онлайн-сервис помощи студентам.",
+      "bullets": [
+        "Поддерживал продукты компании и оперативно устранял сбои в продакшене.",
+        "Интегрировал внешние сервисы через API; работал с PHP (Laminas), MySQL и Python/Django."
+      ],
+      "stack": [
+        "PHP",
+        "Laminas",
+        "MySQL",
+        "Python",
+        "Django",
+        "WordPress"
+      ]
+    },
+    {
+      "company": "Фриланс / частная практика",
+      "role": "Frontend-разработчик",
+      "location": "Минск",
+      "from": "2012-02",
+      "to": "2015-02",
+      "context": "Работа с веб-студиями и прямыми заказчиками.",
+      "bullets": [
+        "Верстал PSD-макеты различной сложности — от лендингов до многостраничных сайтов компаний."
+      ],
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "find-apartment",
+      "url": "https://github.com/LeikoDmitry/find-apartment",
+      "blurb": "Поиск объявлений об аренде на Kufar и Realt.by: дедупликация через SQLite и отправка в Telegram только новых объявлений — с фото и координатами; фильтры по цене и комнатам меняются командами прямо в чате.",
+      "bullets": [
+        "Работает по расписанию раз в 10 минут в Docker; защита от второго поллера превращает конфликт Telegram 409 в понятный отказ при старте вместо молчаливой потери сообщений.",
+        "Типизация и линт на всём проекте: mypy, Ruff и пайплайн GitHub Actions с тестами и публикацией образа на каждый пуш."
+      ],
+      "stack": [
+        "Python 3.12",
+        "SQLite",
+        "Telegram Bot API",
+        "Docker",
+        "GitHub Actions",
+        "mypy",
+        "Ruff"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "group": "Языки",
+      "items": [
+        "PHP 8",
+        "Python 3",
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    {
+      "group": "Фреймворки",
+      "items": [
+        "Symfony",
+        "Laravel",
+        "Laminas",
+        "Django"
+      ]
+    },
+    {
+      "group": "Frontend",
+      "items": [
+        "Vue.js",
+        "Next.js",
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "group": "Архитектура",
+      "items": [
+        "Domain-Driven Design",
+        "SOLID",
+        "Микросервисы",
+        "REST API"
+      ]
+    },
+    {
+      "group": "Данные",
+      "items": [
+        "MySQL",
+        "ClickHouse",
+        "Redis",
+        "SQLite",
+        "pandas"
+      ]
+    },
+    {
+      "group": "Инфраструктура",
+      "items": [
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "Kafka",
+        "Airflow",
+        "Linux",
+        "Git",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "group": "AI-инструменты",
+      "items": [
+        "Claude Code",
+        "Скиллы и плагины",
+        "Интеграции по MCP",
+        "AI-ревью кода"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Zend Certified Engineer — Rogue Wave Software",
+      "year": "2018"
+    },
+    {
+      "name": "PHP-разработчик — Парк высоких технологий, Минск",
+      "year": "2014"
+    }
+  ],
+  "education": [
+    {
+      "school": "Минский государственный профессиональный лицей машиностроения",
+      "degree": "Бакалавр, машиностроение",
+      "from": "2001",
+      "to": "2004",
+      "note": ""
+    }
+  ],
+  "languages": [
+    {
+      "name": "Белорусский",
+      "level": "Родной"
+    },
+    {
+      "name": "Русский",
+      "level": "Родной"
+    },
+    {
+      "name": "Английский",
+      "level": "B2 — средне-продвинутый"
+    }
+  ]
+}

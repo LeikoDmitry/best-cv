@@ -1,0 +1,159 @@
+/* A4 print-first CV. ATS-safe: single text column, real text, no tables for layout. */
+@page { size: A4; margin: 14mm 15mm 15mm; }
+
+:root {
+  --ink:        #16181d;
+  --ink-soft:   #444a55;
+  --ink-faint:  #6b7280;
+  --rule:       #c9ced8;
+  --accent:     #1f3a5f;
+
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 10.3pt; }
+
+body {
+  margin: 0;
+  /* Corbel ships old-style figures by default; dates and years need lining, aligned ones. */
+  font-family: Corbel, "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-variant-numeric: lining-nums tabular-nums;
+  /* Corbel's fi/ff ligatures become U+FB01/U+FB00 in the PDF text layer, so an ATS or a
+     Ctrl+F for "Certified", "Airflow" or "EffectiveSoft" misses them. */
+  font-variant-ligatures: none;
+  font-size: 1rem;
+  line-height: 1.42;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  hyphens: none;
+}
+
+/* ---------- header ---------- */
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 1.15rem;
+}
+
+.head-text { flex: 1; min-width: 0; }
+
+/* Photo is conventional for AT/DE applications; sized to keep the header on one band. */
+.photo {
+  flex: none;
+  width: 27mm;
+  height: 27mm;
+  object-fit: cover;
+  border-radius: 2mm;
+  border: 0.6pt solid var(--rule);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.05rem;
+  line-height: 1.05;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  color: var(--accent);
+}
+
+.headline {
+  margin: 0.28rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.contact {
+  margin: 0.5rem 0 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+.contact span + span::before { content: "  ·  "; color: var(--rule); }
+.contact a { color: var(--ink-soft); text-decoration: none; }
+
+/* ---------- sections ---------- */
+section { margin-top: 1.05rem; }
+
+h2 {
+  margin: 0 0 0.55rem;
+  padding-bottom: 0.16rem;
+  border-bottom: 0.6pt solid var(--rule);
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.summary { margin: 0; text-align: left; }
+
+/* ---------- entries ---------- */
+.entry { margin-bottom: 0.78rem; break-inside: avoid; page-break-inside: avoid; }
+.entry:last-child { margin-bottom: 0; }
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.entry-title { font-weight: 650; }
+.entry-title .at { font-weight: 400; color: var(--ink-soft); }
+
+.entry-meta {
+  flex: none;
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.context {
+  margin: 0.1rem 0 0;
+  font-size: 0.93rem;
+  color: var(--ink-faint);
+}
+
+ul { margin: 0.3rem 0 0; padding-left: 1.05rem; }
+li { margin-bottom: 0.16rem; }
+li::marker { color: var(--ink-faint); }
+
+.stack {
+  margin: 0.26rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+}
+.stack b { font-weight: 600; color: var(--ink-soft); }
+
+/* ---------- skills / languages ---------- */
+.kv { margin: 0; }
+.kv-row { display: flex; gap: 0.55rem; margin-bottom: 0.2rem; break-inside: avoid; }
+.kv-key {
+  flex: 0 0 8.2rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.kv-val { flex: 1; }
+
+a { color: inherit; }
+
+/* ---------- screen preview only ---------- */
+@media screen {
+  body {
+    background: #eef0f4;
+    padding: 2rem 1rem;
+  }
+  .page {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 14mm 15mm 15mm;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0,0,0,.16);
+  }
+}
