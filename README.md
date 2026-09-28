@@ -1,4 +1,4 @@
-# CV
+# Software Engineer CV
 
 Two language versions from one template. Content lives in `data/`, layout in `src/style.css`.
 Edit the JSON, run the build, get PDFs.
