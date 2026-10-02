@@ -25,6 +25,8 @@ language. Section headings, month names and the "Stack:" label come from the `LA
 - `scripts/build.mjs` prints that HTML with headless Chrome (or Edge). The `@page` rule and the
   print CSS are the only source of layout truth — no PDF library to disagree with the browser.
   Override the browser with `CHROME_PATH=...` if neither is in the default location.
+- The font, PT Sans (`assets/fonts`, SIL Open Font License), is embedded in the HTML, so the
+  PDFs come out the same on Windows and macOS.
 - The build exits non-zero and lists every remaining `TODO` string in the data, so a placeholder
   can never end up in a PDF you send to someone.
 

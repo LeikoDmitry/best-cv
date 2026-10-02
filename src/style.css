@@ -16,10 +16,10 @@ html { font-size: 10.3pt; }
 
 body {
   margin: 0;
-  /* Corbel ships old-style figures by default; dates and years need lining, aligned ones. */
-  font-family: Corbel, "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  /* PT Sans is embedded by render.mjs; dates and years need lining, aligned figures. */
+  font-family: "PT Sans", sans-serif;
   font-variant-numeric: lining-nums tabular-nums;
-  /* Corbel's fi/ff ligatures become U+FB01/U+FB00 in the PDF text layer, so an ATS or a
+  /* fi/ff ligatures become U+FB01/U+FB00 in the PDF text layer, so an ATS or a
      Ctrl+F for "Certified", "Airflow" or "EffectiveSoft" misses them. */
   font-variant-ligatures: none;
   font-size: 1rem;

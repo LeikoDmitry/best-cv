@@ -61,6 +61,20 @@ function photoTag(photo) {
   return `<img class="photo" src="data:${mime};base64,${b64}" alt="">`;
 }
 
+/** PT Sans (OFL, assets/fonts) inlined like the photo, so every OS prints the same layout.
+ *  The CSS asks for weights 500–700; anything from 550 up maps to the bold face. */
+const FONTS = [
+  ["PT_Sans-Web-Regular.ttf", "100 549"],
+  ["PT_Sans-Web-Bold.ttf", "550 900"],
+];
+
+function fontFaces() {
+  return FONTS.map(([file, weight]) => {
+    const b64 = readFileSync(join(here, "..", "assets", "fonts", file)).toString("base64");
+    return `@font-face { font-family: "PT Sans"; font-weight: ${weight}; src: url(data:font/ttf;base64,${b64}) format("truetype"); }`;
+  }).join("\n");
+}
+
 function header(b) {
   const contact = [
     b.location && `<span>${esc(b.location)}</span>`,
@@ -145,7 +159,8 @@ export function render(cv) {
 <head>
 <meta charset="utf-8">
 <title>${esc(cv.basics.name)} — CV</title>
-<style>${css}</style>
+<style>${fontFaces()}
+${css}</style>
 </head>
 <body><div class="page">
 ${body}
