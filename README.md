@@ -37,6 +37,6 @@ language. Section headings, month names and the "Stack:" label come from the `LA
 
 ## Sources
 
-`Profile.pdf` (LinkedIn export) and the hh.ru resume (no longer kept in the repo) are the raw
-inputs the content was reconciled from. Where the two disagreed, the hh.ru version was used — it is more
+A LinkedIn export and the hh.ru resume (neither kept in the repo) are the raw inputs the content
+was reconciled from. Where the two disagreed, the hh.ru version was used — it is more
 detailed and more recently updated. The exception is education, see the memory notes.
