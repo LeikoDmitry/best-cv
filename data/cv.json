@@ -18,6 +18,11 @@
         "label": "LinkedIn",
         "url": "https://www.linkedin.com/in/dmitry-liaiko-75270960/",
         "display": "linkedin.com/in/dmitry-liaiko"
+      },
+      {
+        "label": "Telegram",
+        "url": "https://t.me/DmitryLeik",
+        "display": "t.me/DmitryLeik"
       }
     ]
   },
