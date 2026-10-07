@@ -38,17 +38,19 @@ One of the largest online retailers in Belarus: electronics, appliances and a re
 • Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.
 • Building 21vek Post, the company's new parcel-shipping service for individuals and businesses. Built the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, plus much of the shipping-cost calculation for add-on services: limits, dependencies between services, redelivery fees and the bulky-item surcharge.
 • Built the service's two-way exchange with 1C: a transactional outbox publishing parcels to RabbitMQ, Kafka consumers for parcel updates and tariff reference data, and logging of every malformed message. Later added a second outbox for push notifications to senders.
+• Moved the whole site from the CakePHP monolith to Next.js, mobile and desktop: home page, listings, product card, pickup, order history. HAProxy routing between old and new code let us migrate page by page.
+• Built the backend for the auto-parts finder: search by VIN or car model, a tree catalogue of assemblies with parts diagrams, and originals plus analogues from the external TradeSoft catalogue. The service assembles each part's card from events across seven topics and keeps it consistent.
 • Use Claude Code day to day for code generation, review and getting up to speed in unfamiliar parts of the system, extended with my own skills and plugins and with internal and external tools wired in over MCP.
 • Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule.
 
-Skills: PHP · Symfony · Python · PostgreSQL · MySQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Domain-Driven Design
+Skills: PHP · Symfony · Python · Next.js · PostgreSQL · MySQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Domain-Driven Design
 
 ### Senior Backend Developer — hoster.by
 Oct 2021 – Jan 2023 · Minsk, Belarus
 
 Belarusian hosting, domain and cloud-services provider.
 
-• Extended the customer account area, where clients manage their hosting, domains and other services.
+• Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.
 • Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.
 
 Skills: PHP · MySQL · ClickHouse · Redis · REST APIs · Vue.js
@@ -71,7 +73,7 @@ International software engineering and IT-consulting company.
 • Built projects from scratch and extended existing ones for enterprise clients.
 • Delivered e-commerce storefronts alongside custom application development.
 
-Skills: PHP · Symfony · Python · MySQL · WooCommerce
+Skills: PHP · Symfony · Python · Next.js · MySQL · WooCommerce
 
 ### PHP Developer — Zaochnik.com
 Nov 2015 – Oct 2017 · Minsk, Belarus

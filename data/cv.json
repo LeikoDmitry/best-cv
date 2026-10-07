@@ -39,6 +39,8 @@
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
         "Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.",
         "Building 21vek Post, a new parcel-shipping service: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
+        "Moved the whole site from the CakePHP monolith to Next.js, mobile and desktop: home page, listings, product card, pickup, order history. HAProxy routing between old and new code let us migrate page by page.",
+        "Built the backend for the auto-parts finder: search by VIN or car model, a tree catalogue of assemblies with parts diagrams, and originals plus analogues from the external TradeSoft catalogue. The service assembles each part's card from events across seven topics and keeps it consistent.",
         "Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.",
         "Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule."
       ],
@@ -68,7 +70,7 @@
       "to": "2023-01",
       "context": "Belarusian hosting, domain and cloud-services provider.",
       "bullets": [
-        "Extended the customer account area, where clients manage their hosting, domains and other services.",
+        "Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.",
         "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them."
       ],
       "stack": [
