@@ -35,13 +35,12 @@
       "to": "present",
       "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
       "bullets": [
-        "Build new microservices and maintain existing ones, modelling each around its business domain with Domain-Driven Design so services stay changeable as catalogue and order rules evolve.",
+        "Build new microservices and maintain existing ones, modelling each around its business domain so services stay changeable as catalogue and order rules evolve.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
-        "Own services end to end: Symfony/PHP on MySQL and Redis, Kafka for inter-service messaging, shipped on Docker and Kubernetes.",
-        "Backend engineer on 21vek Post, a new parcel-shipping service: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C via transactional outbox, RabbitMQ and Kafka.",
-        "Apply the maintainability practices the team relies on for long-lived code — layered domain models, explicit boundaries between services, and code review.",
+        "Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.",
+        "Building 21vek Post, a new parcel-shipping service: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
         "Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.",
-        "Write Python tooling for analytics and data processing — pandas pipelines for reporting and ad-hoc analysis, scheduled and orchestrated with Airflow."
+        "Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule."
       ],
       "stack": [
         "PHP",
@@ -51,6 +50,7 @@
         "Symfony",
         "MySQL",
         "PostgreSQL",
+        "MongoDB",
         "Redis",
         "Kafka",
         "RabbitMQ",
@@ -69,8 +69,7 @@
       "context": "Belarusian hosting, domain and cloud-services provider.",
       "bullets": [
         "Extended the customer account area, where clients manage their hosting, domains and other services.",
-        "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.",
-        "Worked on a PHP/MySQL stack with ClickHouse for analytical queries, Redis caching, REST APIs and a Vue.js frontend, containerised with Docker."
+        "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them."
       ],
       "stack": [
         "PHP",
@@ -90,7 +89,7 @@
       "to": "2021-10",
       "context": "Custom software development company delivering client projects.",
       "bullets": [
-        "Estimated incoming work, built new functionality and evolved existing client projects in PHP (Symfony, Laravel) and Python.",
+        "Estimated incoming work, built new functionality and evolved existing client projects.",
         "Planned and distributed tasks for junior engineers on the team."
       ],
       "stack": [
@@ -110,8 +109,8 @@
       "to": "2020-10",
       "context": "International software engineering and IT-consulting firm.",
       "bullets": [
-        "Built projects from scratch and extended existing ones for enterprise clients across PHP (Symfony), Python and MySQL.",
-        "Delivered e-commerce work on WordPress/WooCommerce alongside custom application development."
+        "Built projects from scratch and extended existing ones for enterprise clients.",
+        "Delivered e-commerce storefronts alongside custom application development."
       ],
       "stack": [
         "PHP",
@@ -131,7 +130,7 @@
       "context": "Online education marketplace.",
       "bullets": [
         "Supported the company's products and resolved production failures promptly.",
-        "Integrated external services over APIs; worked across PHP (Laminas), MySQL and Python/Django."
+        "Integrated external services over their APIs."
       ],
       "stack": [
         "PHP",
@@ -150,7 +149,7 @@
       "to": "2015-02",
       "context": "Independent contracting for web studios and direct clients.",
       "bullets": [
-        "Built HTML/CSS templates from PSD designs of varying complexity, from landing pages to multi-page company sites."
+        "Turned PSD designs of varying complexity into page templates, from landing pages to multi-page company sites."
       ],
       "stack": [
         "HTML",
@@ -166,8 +165,8 @@
       "url": "https://github.com/LeikoDmitry/find-apartment",
       "blurb": "Rental-listing scanner for Kufar and Realt.by that de-duplicates against SQLite and pushes only unseen listings to Telegram with photos and coordinates; price and room filters are changed live by chat command.",
       "bullets": [
-        "Runs on a 10-minute schedule in Docker; a single-poller guard turns Telegram 409 conflicts into a clear startup refusal instead of silent message loss.",
-        "Typed and linted end to end — mypy, Ruff, and a GitHub Actions test and image-publish pipeline on every push."
+        "Runs every 10 minutes; a single-poller guard turns Telegram 409 conflicts into a clear startup refusal instead of silent message loss.",
+        "Typed and linted end to end, with tests and image publishing in CI on every push."
       ],
       "stack": [
         "Python 3.12",
@@ -223,6 +222,7 @@
       "items": [
         "MySQL",
         "PostgreSQL",
+        "MongoDB",
         "ClickHouse",
         "Redis",
         "SQLite",
