@@ -52,8 +52,9 @@ Belarusian hosting, domain and cloud-services provider.
 
 • Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.
 • Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.
+• Set up, tuned and integrated Sphinx full-text search into the products.
 
-Skills: PHP · MySQL · ClickHouse · Redis · REST APIs · Vue.js
+Skills: PHP · MySQL · ClickHouse · Sphinx · Redis · REST APIs · Vue.js
 
 ### Senior Backend Developer — EffectiveSoft
 Oct 2020 – Oct 2021 · Minsk, Belarus
@@ -101,7 +102,7 @@ Rental-listing scanner for Kufar and Realt.by. It de-duplicates against SQLite a
 
 Top 3 (pinned): PHP · Symfony · Domain-Driven Design
 
-Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · SQL · REST APIs · Laravel · Django · pandas · Apache Airflow · Git · Linux · SOLID · Vue.js · Claude Code
+Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · Sphinx · SQL · REST APIs · Laravel · Django · pandas · Apache Airflow · Git · Linux · SOLID · Vue.js · Claude Code
 
 ## Licenses & certifications
 

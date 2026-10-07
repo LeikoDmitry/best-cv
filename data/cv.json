@@ -71,12 +71,14 @@
       "context": "Belarusian hosting, domain and cloud-services provider.",
       "bullets": [
         "Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.",
-        "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them."
+        "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.",
+        "Set up, tuned and integrated Sphinx full-text search into the products."
       ],
       "stack": [
         "PHP",
         "MySQL",
         "ClickHouse",
+        "Sphinx",
         "Redis",
         "REST API",
         "Vue.js",
@@ -226,6 +228,7 @@
         "PostgreSQL",
         "MongoDB",
         "ClickHouse",
+        "Sphinx",
         "Redis",
         "SQLite",
         "pandas"
