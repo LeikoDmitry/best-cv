@@ -31,7 +31,7 @@
       "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
       "bullets": [
         "Build new microservices and maintain existing ones, modelling each around its business domain with Domain-Driven Design so services stay changeable as catalogue and order rules evolve.",
-        "Take part in migrating the legacy CakePHP monolith to Next.js, moving functionality over piece by piece while the site stays live.",
+        "Migrated the legacy CakePHP monolith to Next.js with the team, moving functionality over piece by piece without taking the site down.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
         "Core stack: Symfony/PHP on MySQL and Redis, Kafka for inter-service messaging, shipped on Docker and Kubernetes.",
         "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C via transactional outbox, RabbitMQ and Kafka.",
