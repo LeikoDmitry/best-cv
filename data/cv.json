@@ -34,7 +34,7 @@
         "Take part in migrating the legacy CakePHP monolith to Next.js, moving functionality over piece by piece while the site stays live.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
         "Core stack: Symfony/PHP on MySQL and Redis, Kafka for inter-service messaging, shipped on Docker and Kubernetes.",
-        "Backend engineer on 21vek Post, a new parcel-shipping service: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C via transactional outbox, RabbitMQ and Kafka.",
+        "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C via transactional outbox, RabbitMQ and Kafka.",
         "Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.",
         "Write Python tooling for analytics and data processing — pandas pipelines for reporting and ad-hoc analysis, scheduled and orchestrated with Airflow."
       ],
@@ -87,6 +87,7 @@
       "context": "Custom software development company.",
       "bullets": [
         "Estimated incoming work, built new functionality and evolved existing client projects in PHP (Symfony, Laravel) and Python.",
+        "Rebuilt the cart of a US phone-number purchasing service from scratch: multiple numbers per order, a cart countdown timer and caching.",
         "Introduced Docker and CI/CD, replacing manual builds and deployments.",
         "Planned and distributed tasks for junior engineers on the team."
       ],
