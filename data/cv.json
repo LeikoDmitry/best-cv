@@ -31,10 +31,10 @@
       "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
       "bullets": [
         "Build new microservices and maintain existing ones, modelling each around its business domain with Domain-Driven Design so services stay changeable as catalogue and order rules evolve.",
+        "Take part in migrating the legacy CakePHP monolith to Next.js, moving functionality over piece by piece while the site stays live.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
-        "Own services end to end: Symfony/PHP on MySQL and Redis, Kafka for inter-service messaging, shipped on Docker and Kubernetes.",
+        "Core stack: Symfony/PHP on MySQL and Redis, Kafka for inter-service messaging, shipped on Docker and Kubernetes.",
         "Backend engineer on 21vek Post, a new parcel-shipping service: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C via transactional outbox, RabbitMQ and Kafka.",
-        "Apply the maintainability practices the team relies on for long-lived code — layered domain models, explicit boundaries between services, and code review.",
         "Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.",
         "Write Python tooling for analytics and data processing — pandas pipelines for reporting and ad-hoc analysis, scheduled and orchestrated with Airflow."
       ],
@@ -44,6 +44,7 @@
         "pandas",
         "Airflow",
         "Symfony",
+        "CakePHP",
         "MySQL",
         "PostgreSQL",
         "Redis",
@@ -83,9 +84,10 @@
       "location": "Minsk",
       "from": "2020-10",
       "to": "2021-10",
-      "context": "Custom software development company delivering client projects.",
+      "context": "Custom software development company.",
       "bullets": [
         "Estimated incoming work, built new functionality and evolved existing client projects in PHP (Symfony, Laravel) and Python.",
+        "Introduced Docker and CI/CD, replacing manual builds and deployments.",
         "Planned and distributed tasks for junior engineers on the team."
       ],
       "stack": [
@@ -94,7 +96,9 @@
         "Laravel",
         "Python",
         "MySQL",
-        "WordPress"
+        "WordPress",
+        "Docker",
+        "CI/CD"
       ]
     },
     {
@@ -105,8 +109,8 @@
       "to": "2020-10",
       "context": "International software engineering and IT-consulting firm.",
       "bullets": [
-        "Built projects from scratch and extended existing ones for enterprise clients across PHP (Symfony), Python and MySQL.",
-        "Delivered e-commerce work on WordPress/WooCommerce alongside custom application development."
+        "Built projects from scratch and extended existing ones for enterprise clients across PHP (Symfony), Python and MySQL, delivered through a Jenkins CI/CD pipeline.",
+        "Also maintained WordPress/WooCommerce online stores."
       ],
       "stack": [
         "PHP",
@@ -114,7 +118,9 @@
         "Python",
         "MySQL",
         "WooCommerce",
-        "JavaScript"
+        "JavaScript",
+        "Jenkins",
+        "CI/CD"
       ]
     },
     {
@@ -126,7 +132,7 @@
       "context": "Online education marketplace.",
       "bullets": [
         "Supported the company's products and resolved production failures promptly.",
-        "Integrated external services over APIs; worked across PHP (Laminas), MySQL and Python/Django."
+        "Connected external services over APIs; worked across PHP (Laminas), MySQL and Python/Django."
       ],
       "stack": [
         "PHP",
@@ -190,6 +196,7 @@
       "items": [
         "Symfony",
         "Laravel",
+        "CakePHP",
         "Laminas",
         "Django"
       ]
@@ -228,14 +235,14 @@
       "group": "Infrastructure",
       "items": [
         "Docker",
-        "Docker Compose",
         "Kubernetes",
         "Kafka",
         "RabbitMQ",
         "Airflow",
         "Linux",
         "Git",
-        "GitHub Actions"
+        "GitHub Actions",
+        "Jenkins"
       ]
     },
     {
