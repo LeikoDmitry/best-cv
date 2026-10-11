@@ -30,6 +30,9 @@ body {
   hyphens: none;
 }
 
+/* render.mjs wraps hyphenated words in this; see txt() there. */
+.nowrap { white-space: nowrap; }
+
 /* ---------- header ---------- */
 header {
   display: flex;

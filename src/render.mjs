@@ -7,6 +7,10 @@ const here = dirname(fileURLToPath(import.meta.url));
 const esc = (s) =>
   String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+/** Body text: a line break at the hyphen of "Domain-Driven" or "add-on" makes PDF text extraction
+ *  (and so an ATS) rejoin it as "DomainDriven", so hyphenated words only ever wrap whole. */
+const txt = (s) => esc(s).replace(/[\p{L}\p{N}]+(?:-[\p{L}\p{N}]+)+/gu, (w) => `<span class="nowrap">${w}</span>`);
+
 /** Section headings and date words per language. cv.lang selects the set. */
 const LABELS = {
   en: {
@@ -42,7 +46,7 @@ const range = (from, to) => {
 const section = (title, body) => (body ? `<section><h2>${esc(title)}</h2>${body}</section>` : "");
 
 const bullets = (items) =>
-  items?.length ? `<ul>${items.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>` : "";
+  items?.length ? `<ul>${items.map((b) => `<li>${txt(b)}</li>`).join("")}</ul>` : "";
 
 const stackLine = (stack) =>
   stack?.length ? `<p class="stack"><b>${esc(T.stack)}</b> ${esc(stack.join(" · "))}</p>` : "";
@@ -101,7 +105,7 @@ function experience(list) {
         <div class="entry-title">${esc(j.role)} <span class="at">· ${esc(j.company)}</span></div>
         <div class="entry-meta">${esc(range(j.from, j.to))}${j.location ? ` · ${esc(j.location)}` : ""}</div>
       </div>
-      ${j.context ? `<p class="context">${esc(j.context)}</p>` : ""}
+      ${j.context ? `<p class="context">${txt(j.context)}</p>` : ""}
       ${bullets(j.bullets)}
       ${stackLine(j.stack)}
     </div>`).join("");
@@ -113,7 +117,7 @@ function projects(list) {
         <div class="entry-title">${esc(p.name)}</div>
         <div class="entry-meta">${p.url ? `<a href="${esc(p.url)}">${esc(p.url.replace(/^https?:\/\/(www\.)?/, ""))}</a>` : ""}</div>
       </div>
-      ${p.blurb ? `<p class="context">${esc(p.blurb)}</p>` : ""}
+      ${p.blurb ? `<p class="context">${txt(p.blurb)}</p>` : ""}
       ${bullets(p.bullets)}
       ${stackLine(p.stack)}
     </div>`).join("");
@@ -132,7 +136,7 @@ function education(list) {
 
 const kv = (rows) =>
   `<div class="kv">${rows.map(([k, v]) =>
-    `<div class="kv-row"><div class="kv-key">${esc(k)}</div><div class="kv-val">${esc(v)}</div></div>`
+    `<div class="kv-row"><div class="kv-key">${esc(k)}</div><div class="kv-val">${txt(v)}</div></div>`
   ).join("")}</div>`;
 
 export function render(cv) {
@@ -141,7 +145,7 @@ export function render(cv) {
 
   const body = [
     header(cv.basics),
-    section(T.summary, cv.basics.summary ? `<p class="summary">${esc(cv.basics.summary)}</p>` : ""),
+    section(T.summary, cv.basics.summary ? `<p class="summary">${txt(cv.basics.summary)}</p>` : ""),
     section(T.experience, cv.experience?.length ? experience(cv.experience) : ""),
     section(T.projects, cv.projects?.length ? projects(cv.projects) : ""),
     section(T.skills, cv.skills?.length ? kv(cv.skills.map((s) => [s.group, s.items.join(" · ")])) : ""),
