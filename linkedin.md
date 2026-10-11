@@ -50,16 +50,15 @@ Belarusian hosting, domain and cloud-services provider.
 
 • Extended the customer account area, where clients manage their hosting, domains and other services.
 • Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.
-• Worked on a PHP/MySQL stack with ClickHouse for analytical queries, Redis caching, REST APIs and a Vue.js frontend, containerised with Docker.
 
-Skills: PHP · MySQL · ClickHouse · Redis · REST APIs · Vue.js
+Skills: PHP · MySQL · ClickHouse · Redis · REST APIs · Vue.js · Docker
 
 ### Senior Backend Developer — EffectiveSoft
 Oct 2020 – Oct 2021 · Minsk, Belarus
 
 Custom software development company.
 
-• Estimated incoming work, built new functionality and evolved existing client projects in PHP (Symfony, Laravel) and Python.
+• Estimated incoming work, built new functionality and evolved existing client projects.
 • Rebuilt the cart of a US phone-number purchasing service from scratch: multiple numbers per order, a cart countdown timer and caching.
 • Introduced Docker and CI/CD, replacing manual builds and deployments.
 • Planned and distributed tasks for junior engineers on the team.
@@ -71,7 +70,7 @@ Oct 2017 – Oct 2020 · Minsk, Belarus
 
 International software engineering and IT-consulting company.
 
-• Built projects from scratch and extended existing ones for enterprise clients in PHP (Symfony), Python and MySQL, delivered through a Jenkins CI/CD pipeline.
+• Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.
 • Also maintained WordPress/WooCommerce online stores.
 
 Skills: PHP · Symfony · Python · MySQL · WooCommerce · Jenkins
@@ -82,7 +81,7 @@ Nov 2015 – Oct 2017 · Minsk, Belarus
 Online education marketplace.
 
 • Supported the company's products and resolved production failures promptly.
-• Connected external services over APIs; worked across PHP (Laminas), MySQL and Python/Django.
+• Connected external services over APIs.
 
 Skills: PHP · Laminas · Python · Django · MySQL
 
