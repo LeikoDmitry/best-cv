@@ -38,7 +38,7 @@
         "Build new microservices and maintain existing ones, modelling each around its business domain so services stay changeable as catalogue and order rules evolve.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
         "Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.",
-        "Building 21vek Post, a new parcel-shipping service: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
+        "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
         "Moved the whole site from the CakePHP monolith to Next.js, mobile and desktop: home page, listings, product card, pickup, order history. HAProxy routing between old and new code let us migrate page by page.",
         "Built the backend for the auto-parts finder: search by VIN or car model, a tree catalogue of assemblies with parts diagrams, and originals plus analogues from the external TradeSoft catalogue. The service assembles each part's card from events across seven topics and keeps it consistent.",
         "Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.",
@@ -50,6 +50,7 @@
         "pandas",
         "Airflow",
         "Symfony",
+        "CakePHP",
         "MySQL",
         "PostgreSQL",
         "MongoDB",
@@ -72,7 +73,7 @@
       "bullets": [
         "Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.",
         "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.",
-        "Set up, tuned and integrated Sphinx full-text search into the products."
+        "Set up, tuned and integrated Sphinx full-text search into the services."
       ],
       "stack": [
         "PHP",
@@ -91,9 +92,11 @@
       "location": "Minsk",
       "from": "2020-10",
       "to": "2021-10",
-      "context": "Custom software development company delivering client projects.",
+      "context": "Custom software development company.",
       "bullets": [
         "Estimated incoming work, built new functionality and evolved existing client projects.",
+        "Rebuilt the cart of a US phone-number purchasing service from scratch: multiple numbers per order, a cart countdown timer and caching.",
+        "Introduced Docker and CI/CD, replacing manual builds and deployments.",
         "Planned and distributed tasks for junior engineers on the team."
       ],
       "stack": [
@@ -102,7 +105,9 @@
         "Laravel",
         "Python",
         "MySQL",
-        "WordPress"
+        "WordPress",
+        "Docker",
+        "CI/CD"
       ]
     },
     {
@@ -113,8 +118,8 @@
       "to": "2020-10",
       "context": "International software engineering and IT-consulting firm.",
       "bullets": [
-        "Built projects from scratch and extended existing ones for enterprise clients.",
-        "Delivered e-commerce storefronts alongside custom application development."
+        "Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.",
+        "Also maintained WordPress/WooCommerce online stores."
       ],
       "stack": [
         "PHP",
@@ -122,7 +127,9 @@
         "Python",
         "MySQL",
         "WooCommerce",
-        "JavaScript"
+        "JavaScript",
+        "Jenkins",
+        "CI/CD"
       ]
     },
     {
@@ -134,7 +141,7 @@
       "context": "Online education marketplace.",
       "bullets": [
         "Supported the company's products and resolved production failures promptly.",
-        "Integrated external services over their APIs."
+        "Connected external services over APIs."
       ],
       "stack": [
         "PHP",
@@ -198,6 +205,7 @@
       "items": [
         "Symfony",
         "Laravel",
+        "CakePHP",
         "Laminas",
         "Django"
       ]
@@ -238,14 +246,14 @@
       "group": "Infrastructure",
       "items": [
         "Docker",
-        "Docker Compose",
         "Kubernetes",
         "Kafka",
         "RabbitMQ",
         "Airflow",
         "Linux",
         "Git",
-        "GitHub Actions"
+        "GitHub Actions",
+        "Jenkins"
       ]
     },
     {
