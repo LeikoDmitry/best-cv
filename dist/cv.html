@@ -37,6 +37,9 @@ body {
   hyphens: none;
 }
 
+/* render.mjs wraps hyphenated words in this; see txt() there. */
+.nowrap { white-space: nowrap; }
+
 /* ---------- header ---------- */
 header {
   display: flex;
@@ -182,39 +185,39 @@ a { color: inherit; }
         <div class="entry-meta">2023 – Present · Minsk</div>
       </div>
       <p class="context">One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.</p>
-      <ul><li>Build new microservices and maintain existing ones, modelling each around its business domain so services stay changeable as catalogue and order rules evolve.</li><li>Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.</li><li>Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.</li><li>Building 21vek Post, a new parcel-shipping service: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.</li><li>Moved the whole site from the CakePHP monolith to Next.js, mobile and desktop: home page, listings, product card, pickup, order history. HAProxy routing between old and new code let us migrate page by page.</li><li>Built the backend for the auto-parts finder: search by VIN or car model, a tree catalogue of assemblies with parts diagrams, and originals plus analogues from the external TradeSoft catalogue. The service assembles each part's card from events across seven topics and keeps it consistent.</li><li>Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.</li><li>Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule.</li></ul>
-      <p class="stack"><b>Stack:</b> PHP · Python · pandas · Airflow · Symfony · MySQL · PostgreSQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Docker · Next.js · DDD</p>
+      <ul><li>Build new microservices and maintain existing ones, modelling each around its business domain so services stay changeable as catalogue and order rules evolve.</li><li>Work mostly in the cart and delivery domain: how a cart is assembled and priced down to <span class="nowrap">promo-code</span> discounts, and which delivery methods and time slots a customer is offered at checkout.</li><li>Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.</li><li>Built 21vek Post, a new <span class="nowrap">parcel-shipping</span> service, with the team: parcel creation, <span class="nowrap">shipping-cost</span> calculation for <span class="nowrap">add-on</span> services, and a <span class="nowrap">two-way</span> exchange with 1C through a transactional outbox and message brokers.</li><li>Moved the whole site from the CakePHP monolith to Next.js, mobile and desktop: home page, listings, product card, pickup, order history. HAProxy routing between old and new code let us migrate page by page.</li><li>Built the backend for the <span class="nowrap">auto-parts</span> finder: search by VIN or car model, a tree catalogue of assemblies with parts diagrams, and originals plus analogues from the external TradeSoft catalogue. The service assembles each part's card from events across seven topics and keeps it consistent.</li><li>Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.</li><li>Write analytics and <span class="nowrap">data-processing</span> tooling: reporting pipelines and <span class="nowrap">ad-hoc</span> analysis, run on a schedule.</li></ul>
+      <p class="stack"><b>Stack:</b> PHP · Python · pandas · Airflow · Symfony · CakePHP · MySQL · PostgreSQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Docker · Next.js · DDD</p>
     </div><div class="entry">
       <div class="entry-head">
         <div class="entry-title">Senior Backend Developer <span class="at">· hoster.by</span></div>
         <div class="entry-meta">2021 – 2023 · Minsk</div>
       </div>
-      <p class="context">Belarusian hosting, domain and cloud-services provider.</p>
-      <ul><li>Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.</li><li>Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.</li><li>Set up, tuned and integrated Sphinx full-text search into the products.</li></ul>
+      <p class="context">Belarusian hosting, domain and <span class="nowrap">cloud-services</span> provider.</p>
+      <ul><li>Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.</li><li>Integrated <span class="nowrap">third-party</span> APIs with internal services, keeping provider changes isolated from the products that depended on them.</li><li>Set up, tuned and integrated Sphinx <span class="nowrap">full-text</span> search into the services.</li></ul>
       <p class="stack"><b>Stack:</b> PHP · MySQL · ClickHouse · Sphinx · Redis · REST API · Vue.js · Docker</p>
     </div><div class="entry">
       <div class="entry-head">
         <div class="entry-title">Senior Backend Developer <span class="at">· EffectiveSoft</span></div>
         <div class="entry-meta">2020 – 2021 · Minsk</div>
       </div>
-      <p class="context">Custom software development company delivering client projects.</p>
-      <ul><li>Estimated incoming work, built new functionality and evolved existing client projects.</li><li>Planned and distributed tasks for junior engineers on the team.</li></ul>
-      <p class="stack"><b>Stack:</b> PHP · Symfony · Laravel · Python · MySQL · WordPress</p>
+      <p class="context">Custom software development company.</p>
+      <ul><li>Estimated incoming work, built new functionality and evolved existing client projects.</li><li>Rebuilt the cart of a US <span class="nowrap">phone-number</span> purchasing service from scratch: multiple numbers per order, a cart countdown timer and caching.</li><li>Introduced Docker and CI/CD, replacing manual builds and deployments.</li><li>Planned and distributed tasks for junior engineers on the team.</li></ul>
+      <p class="stack"><b>Stack:</b> PHP · Symfony · Laravel · Python · MySQL · WordPress · Docker · CI/CD</p>
     </div><div class="entry">
       <div class="entry-head">
         <div class="entry-title">Software Engineer <span class="at">· Itransition</span></div>
         <div class="entry-meta">2017 – 2020 · Minsk</div>
       </div>
-      <p class="context">International software engineering and IT-consulting firm.</p>
-      <ul><li>Built projects from scratch and extended existing ones for enterprise clients.</li><li>Delivered e-commerce storefronts alongside custom application development.</li></ul>
-      <p class="stack"><b>Stack:</b> PHP · Symfony · Python · MySQL · WooCommerce · JavaScript</p>
+      <p class="context">International software engineering and <span class="nowrap">IT-consulting</span> firm.</p>
+      <ul><li>Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.</li><li>Also maintained WordPress/WooCommerce online stores.</li></ul>
+      <p class="stack"><b>Stack:</b> PHP · Symfony · Python · MySQL · WooCommerce · JavaScript · Jenkins · CI/CD</p>
     </div><div class="entry">
       <div class="entry-head">
         <div class="entry-title">PHP Developer <span class="at">· Zaochnik.com</span></div>
         <div class="entry-meta">2015 – 2017 · Minsk</div>
       </div>
       <p class="context">Online education marketplace.</p>
-      <ul><li>Supported the company's products and resolved production failures promptly.</li><li>Integrated external services over their APIs.</li></ul>
+      <ul><li>Supported the company's products and resolved production failures promptly.</li><li>Connected external services over APIs.</li></ul>
       <p class="stack"><b>Stack:</b> PHP · Laminas · MySQL · Python · Django · WordPress</p>
     </div><div class="entry">
       <div class="entry-head">
@@ -222,7 +225,7 @@ a { color: inherit; }
         <div class="entry-meta">2012 – 2015 · Minsk</div>
       </div>
       <p class="context">Independent contracting for web studios and direct clients.</p>
-      <ul><li>Turned PSD designs of varying complexity into page templates, from landing pages to multi-page company sites.</li></ul>
+      <ul><li>Turned PSD designs of varying complexity into page templates, from landing pages to <span class="nowrap">multi-page</span> company sites.</li></ul>
       <p class="stack"><b>Stack:</b> HTML · CSS · JavaScript · Bootstrap</p>
     </div></section>
 <section><h2>Selected Projects</h2><div class="entry">
@@ -230,12 +233,12 @@ a { color: inherit; }
         <div class="entry-title">find-apartment</div>
         <div class="entry-meta"><a href="https://github.com/LeikoDmitry/find-apartment">github.com/LeikoDmitry/find-apartment</a></div>
       </div>
-      <p class="context">Rental-listing scanner for Kufar and Realt.by that de-duplicates against SQLite and pushes only unseen listings to Telegram with photos and coordinates; price and room filters are changed live by chat command.</p>
-      <ul><li>Runs every 10 minutes; a single-poller guard turns Telegram 409 conflicts into a clear startup refusal instead of silent message loss.</li><li>Typed and linted end to end, with tests and image publishing in CI on every push.</li></ul>
+      <p class="context"><span class="nowrap">Rental-listing</span> scanner for Kufar and Realt.by that <span class="nowrap">de-duplicates</span> against SQLite and pushes only unseen listings to Telegram with photos and coordinates; price and room filters are changed live by chat command.</p>
+      <ul><li>Runs every 10 minutes; a <span class="nowrap">single-poller</span> guard turns Telegram 409 conflicts into a clear startup refusal instead of silent message loss.</li><li>Typed and linted end to end, with tests and image publishing in CI on every push.</li></ul>
       <p class="stack"><b>Stack:</b> Python 3.12 · SQLite · Telegram Bot API · Docker · GitHub Actions · mypy · Ruff</p>
     </div></section>
-<section><h2>Skills</h2><div class="kv"><div class="kv-row"><div class="kv-key">Languages</div><div class="kv-val">PHP 8 · Python 3 · JavaScript · SQL</div></div><div class="kv-row"><div class="kv-key">Frameworks</div><div class="kv-val">Symfony · Laravel · Laminas · Django</div></div><div class="kv-row"><div class="kv-key">Frontend</div><div class="kv-val">Vue.js · Next.js · HTML · CSS · Bootstrap</div></div><div class="kv-row"><div class="kv-key">Architecture</div><div class="kv-val">Domain-Driven Design · SOLID · Microservices · REST APIs</div></div><div class="kv-row"><div class="kv-key">Data</div><div class="kv-val">MySQL · PostgreSQL · MongoDB · ClickHouse · Sphinx · Redis · SQLite · pandas</div></div><div class="kv-row"><div class="kv-key">Infrastructure</div><div class="kv-val">Docker · Docker Compose · Kubernetes · Kafka · RabbitMQ · Airflow · Linux · Git · GitHub Actions</div></div><div class="kv-row"><div class="kv-key">AI tooling</div><div class="kv-val">Claude Code · Skills &amp; plugins · MCP integrations · LLM-assisted code review</div></div></div></section>
-<section><h2>Certifications</h2><div class="kv"><div class="kv-row"><div class="kv-key">2018</div><div class="kv-val">Zend Certified Engineer — Rogue Wave Software</div></div><div class="kv-row"><div class="kv-key">2014</div><div class="kv-val">PHP Developer — High-Tech Park, Minsk</div></div></div></section>
+<section><h2>Skills</h2><div class="kv"><div class="kv-row"><div class="kv-key">Languages</div><div class="kv-val">PHP 8 · Python 3 · JavaScript · SQL</div></div><div class="kv-row"><div class="kv-key">Frameworks</div><div class="kv-val">Symfony · Laravel · CakePHP · Laminas · Django</div></div><div class="kv-row"><div class="kv-key">Frontend</div><div class="kv-val">Vue.js · Next.js · HTML · CSS · Bootstrap</div></div><div class="kv-row"><div class="kv-key">Architecture</div><div class="kv-val"><span class="nowrap">Domain-Driven</span> Design · SOLID · Microservices · REST APIs</div></div><div class="kv-row"><div class="kv-key">Data</div><div class="kv-val">MySQL · PostgreSQL · MongoDB · ClickHouse · Sphinx · Redis · SQLite · pandas</div></div><div class="kv-row"><div class="kv-key">Infrastructure</div><div class="kv-val">Docker · Kubernetes · Kafka · RabbitMQ · Airflow · Linux · Git · GitHub Actions · Jenkins</div></div><div class="kv-row"><div class="kv-key">AI tooling</div><div class="kv-val">Claude Code · Skills &amp; plugins · MCP integrations · <span class="nowrap">LLM-assisted</span> code review</div></div></div></section>
+<section><h2>Certifications</h2><div class="kv"><div class="kv-row"><div class="kv-key">2018</div><div class="kv-val">Zend Certified Engineer — Rogue Wave Software</div></div><div class="kv-row"><div class="kv-key">2014</div><div class="kv-val">PHP Developer — <span class="nowrap">High-Tech</span> Park, Minsk</div></div></div></section>
 <section><h2>Education</h2><div class="entry">
       <div class="entry-head">
         <div class="entry-title">Minsk State Professional Lyceum of Mechanical Engineering</div>
@@ -244,6 +247,6 @@ a { color: inherit; }
       <p class="context">Bachelor's degree, Mechanical engineering</p>
       
     </div></section>
-<section><h2>Languages</h2><div class="kv"><div class="kv-row"><div class="kv-key">Belarusian</div><div class="kv-val">Native</div></div><div class="kv-row"><div class="kv-key">Russian</div><div class="kv-val">Native</div></div><div class="kv-row"><div class="kv-key">English</div><div class="kv-val">B2 — Upper-intermediate</div></div></div></section>
+<section><h2>Languages</h2><div class="kv"><div class="kv-row"><div class="kv-key">Belarusian</div><div class="kv-val">Native</div></div><div class="kv-row"><div class="kv-key">Russian</div><div class="kv-val">Native</div></div><div class="kv-row"><div class="kv-key">English</div><div class="kv-val">B2 — <span class="nowrap">Upper-intermediate</span></div></div></div></section>
 </div></body>
 </html>

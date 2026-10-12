@@ -15,14 +15,14 @@ Minsk, Belarus
 
 Backend engineer with 10+ years in PHP/Symfony and Python/Django.
 
-Since 2023 I've been building microservices at 21vek.by, one of the largest online retailers in Belarus. I work mostly in the cart and delivery domain: how a cart is assembled and priced, down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout. I also work on 21vek Post, the company's new parcel-shipping service: cost calculation for postal services and the data exchange with 1C. I model each service around its business domain with Domain-Driven Design and own it end to end, from the domain model to production on Kubernetes.
+Since 2023 I've been building microservices at 21vek.by, one of the largest online retailers in Belarus. I work mostly in the cart and delivery domain: how a cart is assembled and priced, down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout. With the team I built 21vek Post, the company's new parcel-shipping service, where I worked on cost calculation for postal services and the data exchange with 1C. We also migrated the legacy CakePHP monolith to Next.js. I model each service around its business domain with Domain-Driven Design and own it end to end, from the domain model to production on Kubernetes.
 
 What I work with:
 • PHP 8, Symfony, MySQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ, Docker, Kubernetes
 • Python, pandas and Airflow for analytics and data tooling
 • Claude Code day to day, extended with skills and plugins I write myself and with internal tools wired in over MCP
 
-Before 21vek.by: hoster.by, EffectiveSoft, Itransition and Zaochnik.com. I worked on customer-facing products, client projects and third-party API integrations, and planned work for junior engineers.
+Before 21vek.by: hoster.by, EffectiveSoft, Itransition and Zaochnik.com. I worked on customer-facing products, client projects and third-party API integrations, introduced Docker and CI/CD on client projects, and planned work for junior engineers.
 
 Zend Certified Engineer (2018). Open to remote roles or relocation.
 
@@ -36,14 +36,14 @@ One of the largest online retailers in Belarus: electronics, appliances and a re
 • Build new microservices and maintain existing ones, modelling each around its business domain so services stay changeable as catalogue and order rules evolve.
 • Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.
 • Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.
-• Building 21vek Post, the company's new parcel-shipping service for individuals and businesses. Built the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, plus much of the shipping-cost calculation for add-on services: limits, dependencies between services, redelivery fees and the bulky-item surcharge.
+• Built 21vek Post, the company's new parcel-shipping service for individuals and businesses, with the team. My part: the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, plus much of the shipping-cost calculation for add-on services: limits, dependencies between services, redelivery fees and the bulky-item surcharge.
 • Built the service's two-way exchange with 1C: a transactional outbox publishing parcels to RabbitMQ, Kafka consumers for parcel updates and tariff reference data, and logging of every malformed message. Later added a second outbox for push notifications to senders.
 • Moved the whole site from the CakePHP monolith to Next.js, mobile and desktop: home page, listings, product card, pickup, order history. HAProxy routing between old and new code let us migrate page by page.
 • Built the backend for the auto-parts finder: search by VIN or car model, a tree catalogue of assemblies with parts diagrams, and originals plus analogues from the external TradeSoft catalogue. The service assembles each part's card from events across seven topics and keeps it consistent.
 • Use Claude Code day to day for code generation, review and getting up to speed in unfamiliar parts of the system, extended with my own skills and plugins and with internal and external tools wired in over MCP.
 • Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule.
 
-Skills: PHP · Symfony · Python · Next.js · PostgreSQL · MySQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Domain-Driven Design
+Skills: PHP · Symfony · CakePHP · Python · Next.js · PostgreSQL · MySQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Domain-Driven Design
 
 ### Senior Backend Developer — hoster.by
 Oct 2021 – Jan 2023 · Minsk, Belarus
@@ -52,9 +52,9 @@ Belarusian hosting, domain and cloud-services provider.
 
 • Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.
 • Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.
-• Set up, tuned and integrated Sphinx full-text search into the products.
+• Set up, tuned and integrated Sphinx full-text search into the services.
 
-Skills: PHP · MySQL · ClickHouse · Sphinx · Redis · REST APIs · Vue.js
+Skills: PHP · MySQL · ClickHouse · Sphinx · Redis · REST APIs · Vue.js · Docker
 
 ### Senior Backend Developer — EffectiveSoft
 Oct 2020 – Oct 2021 · Minsk, Belarus
@@ -62,19 +62,21 @@ Oct 2020 – Oct 2021 · Minsk, Belarus
 Custom software development company.
 
 • Estimated incoming work, built new functionality and evolved existing client projects.
+• Rebuilt the cart of a US phone-number purchasing service from scratch: multiple numbers per order, a cart countdown timer and caching.
+• Introduced Docker and CI/CD, replacing manual builds and deployments.
 • Planned and distributed tasks for junior engineers on the team.
 
-Skills: PHP · Symfony · Laravel · Python · MySQL
+Skills: PHP · Symfony · Laravel · Python · MySQL · Docker · CI/CD
 
 ### Software Engineer — Itransition
 Oct 2017 – Oct 2020 · Minsk, Belarus
 
 International software engineering and IT-consulting company.
 
-• Built projects from scratch and extended existing ones for enterprise clients.
-• Delivered e-commerce storefronts alongside custom application development.
+• Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.
+• Also maintained WordPress/WooCommerce online stores.
 
-Skills: PHP · Symfony · Python · Next.js · MySQL · WooCommerce
+Skills: PHP · Symfony · Python · MySQL · WooCommerce · Jenkins
 
 ### PHP Developer — Zaochnik.com
 Nov 2015 – Oct 2017 · Minsk, Belarus
@@ -82,7 +84,7 @@ Nov 2015 – Oct 2017 · Minsk, Belarus
 Online education marketplace.
 
 • Supported the company's products and resolved production failures promptly.
-• Integrated external services over their APIs.
+• Connected external services over APIs.
 
 Skills: PHP · Laminas · Python · Django · MySQL
 
@@ -102,7 +104,7 @@ Rental-listing scanner for Kufar and Realt.by. It de-duplicates against SQLite a
 
 Top 3 (pinned): PHP · Symfony · Domain-Driven Design
 
-Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · Sphinx · SQL · REST APIs · Laravel · Django · pandas · Apache Airflow · Git · Linux · SOLID · Vue.js · Claude Code
+Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · Sphinx · SQL · REST APIs · Laravel · CakePHP · Django · Next.js · pandas · Apache Airflow · Jenkins · CI/CD · Git · Linux · SOLID · Vue.js · Claude Code
 
 ## Licenses & certifications
 
