@@ -35,13 +35,12 @@
       "to": "present",
       "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
       "bullets": [
-        "Build new microservices and maintain existing ones, modelling each around its business domain so services stay changeable as catalogue and order rules evolve.",
+        "Build and maintain microservices end to end — domain model, service boundaries, code review, production support — each modelled around its business domain so it stays changeable as catalogue and order rules evolve.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
-        "Own services end to end: layered domain model, explicit boundaries between services, code review, delivery to production and support there.",
         "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
-        "Moved the whole site from the CakePHP monolith to Next.js, mobile and desktop: home page, listings, product card, pickup, order history. HAProxy routing between old and new code let us migrate page by page.",
-        "Built the backend for the auto-parts finder: search by VIN or car model, a tree catalogue of assemblies with parts diagrams, and originals plus analogues from the external TradeSoft catalogue. The service assembles each part's card from events across seven topics and keeps it consistent.",
-        "Use AI tooling day to day: Claude Code for code generation, review and getting up to speed in unfamiliar parts of the system — extended with skills and plugins I write myself, and with internal and external tools wired in over MCP.",
+        "Moved the site from the CakePHP monolith to Next.js page by page — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.",
+        "Built the auto-parts finder backend: search by VIN or car model, a catalogue of assemblies with parts diagrams, originals and analogues from TradeSoft; part cards are assembled from events across seven topics.",
+        "Use Claude Code day to day for code generation, review and getting into unfamiliar code, extended with my own skills and plugins and with tools wired in over MCP.",
         "Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule."
       ],
       "stack": [
@@ -94,10 +93,9 @@
       "to": "2021-10",
       "context": "Custom software development company.",
       "bullets": [
-        "Estimated incoming work, built new functionality and evolved existing client projects.",
+        "Estimated incoming work, built and evolved client projects, and planned tasks for junior engineers.",
         "Rebuilt the cart of a US phone-number purchasing service from scratch: multiple numbers per order, a cart countdown timer and caching.",
-        "Introduced Docker and CI/CD, replacing manual builds and deployments.",
-        "Planned and distributed tasks for junior engineers on the team."
+        "Introduced Docker and CI/CD, replacing manual builds and deployments."
       ],
       "stack": [
         "PHP",
