@@ -3,7 +3,7 @@
   "basics": {
     "name": "Dmitry Leiko",
     "headline": "Senior Backend Engineer · PHP / Python · Zend Certified Engineer",
-    "summary": "Backend engineer, 10+ years: PHP/Symfony and Python/Django. Since 2023 — microservices for one of the largest online retailers in Belarus: I design around DDD and own a service from its domain model to production on Kubernetes.",
+    "summary": "Backend engineer, 10+ years: PHP/Symfony and Python/Django. Building microservices for one of the largest online retailers in Belarus: I apply domain-driven design (DDD) and own a service from its domain model to production on Kubernetes.",
     "photo": "assets/photo.jpeg",
     "location": "Minsk, Belarus · Open to remote or relocation",
     "email": "dmitri.leiko@gmail.com",
@@ -38,8 +38,8 @@
         "Build and maintain microservices end to end — domain model, service boundaries, code review, production support — each modelled around its business domain so it stays changeable as catalogue and order rules evolve.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
         "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
-        "Moved the site from the CakePHP monolith to Next.js page by page — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.",
-        "Built the auto-parts finder backend: search by VIN or car model, a catalogue of assemblies with parts diagrams, originals and analogues from TradeSoft; part cards are assembled from events across seven topics.",
+        "With the team, moved the site from the CakePHP monolith to Next.js in stages — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.",
+        "Built the auto-parts finder backend with the team: search by VIN or car model, a catalogue of assemblies with parts diagrams, originals and analogues; part cards are assembled from events across seven topics.",
         "Use Claude Code day to day for code generation, review and getting into unfamiliar code, extended with my own skills and plugins and with tools wired in over MCP.",
         "Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule."
       ],
@@ -116,8 +116,9 @@
       "to": "2020-10",
       "context": "International software engineering and IT-consulting firm.",
       "bullets": [
+        "Maintained and developed a customs duty and tax calculation system.",
         "Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.",
-        "Also maintained WordPress/WooCommerce online stores."
+        "Supported WordPress/WooCommerce online stores."
       ],
       "stack": [
         "PHP",
@@ -174,7 +175,7 @@
       "url": "https://github.com/LeikoDmitry/find-apartment",
       "blurb": "Rental-listing scanner for Kufar and Realt.by that de-duplicates against SQLite and pushes only unseen listings to Telegram with photos and coordinates; price and room filters are changed live by chat command.",
       "bullets": [
-        "Runs every 10 minutes; a single-poller guard turns Telegram 409 conflicts into a clear startup refusal instead of silent message loss.",
+        "Runs every 10 minutes; a second copy of the bot will not start while the first is running, so chat commands are not lost to Telegram 409 conflicts.",
         "Typed and linted end to end, with tests and image publishing in CI on every push."
       ],
       "stack": [

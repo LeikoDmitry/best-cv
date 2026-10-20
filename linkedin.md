@@ -15,7 +15,7 @@ Minsk, Belarus
 
 Backend engineer with 10+ years in PHP/Symfony and Python/Django.
 
-Since 2023 I've been building microservices at 21vek.by, one of the largest online retailers in Belarus. I work mostly in the cart and delivery domain: how a cart is assembled and priced, down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout. With the team I built 21vek Post, the company's new parcel-shipping service, where I worked on cost calculation for postal services and the data exchange with 1C. We also migrated the legacy CakePHP monolith to Next.js, and I built the backend for the auto-parts finder. I model each service around its business domain with Domain-Driven Design and own it end to end, from the domain model to production on Kubernetes.
+I build microservices at 21vek.by, one of the largest online retailers in Belarus. I work mostly in the cart and delivery domain: how a cart is assembled and priced, down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout. With the team I built 21vek Post, the company's new parcel-shipping service, where I worked on cost calculation for postal services and the data exchange with 1C. We also migrated the legacy CakePHP monolith to Next.js and built the backend for the auto-parts finder. I model each service around its business domain with Domain-Driven Design and own it end to end, from the domain model to production on Kubernetes.
 
 What I work with:
 • PHP 8, Symfony, MySQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ, Docker, Kubernetes
@@ -37,8 +37,8 @@ One of the largest online retailers in Belarus: electronics, appliances and a re
 • Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.
 • Built 21vek Post, the company's new parcel-shipping service for individuals and businesses, with the team. My part: the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, plus much of the shipping-cost calculation for add-on services: limits, dependencies between services, redelivery fees and the bulky-item surcharge.
 • Built the service's two-way exchange with 1C: a transactional outbox publishing parcels to RabbitMQ, Kafka consumers for parcel updates and tariff reference data, and logging of every malformed message. Later added a second outbox for push notifications to senders.
-• Moved the site from the CakePHP monolith to Next.js page by page — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.
-• Built the auto-parts finder backend: search by VIN or car model, a catalogue of assemblies with parts diagrams, originals and analogues from TradeSoft; part cards are assembled from events across seven topics.
+• With the team, moved the site from the CakePHP monolith to Next.js in stages — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.
+• Built the auto-parts finder backend with the team: search by VIN or car model, a catalogue of assemblies with parts diagrams, originals and analogues; part cards are assembled from events across seven topics.
 • Use Claude Code day to day for code generation, review and getting into unfamiliar code, extended with my own skills and plugins and with tools wired in over MCP.
 • Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule.
 
@@ -71,8 +71,9 @@ Oct 2017 – Oct 2020 · Minsk, Belarus
 
 International software engineering and IT-consulting company.
 
+• Maintained and developed a customs duty and tax calculation system.
 • Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.
-• Also maintained WordPress/WooCommerce online stores.
+• Supported WordPress/WooCommerce online stores.
 
 Skills: PHP · Symfony · Python · MySQL · WooCommerce · JavaScript · Jenkins · CI/CD
 
