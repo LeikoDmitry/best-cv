@@ -36,7 +36,7 @@
       "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
       "bullets": [
         "Build and maintain microservices end to end — domain model, service boundaries, code review, production support — each modelled around its business domain so it stays changeable as catalogue and order rules evolve.",
-        "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
+        "Work in the purchase stream — two teams of ten engineers — mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
         "Instrumented the purchase flow with product metrics: tracking events from cart and checkout through order confirmation, so funnel conversion and drop-off points are visible to the business.",
         "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
         "With the team, moved the site from the CakePHP monolith to Next.js over six months of staged releases — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.",
