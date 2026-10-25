@@ -15,7 +15,7 @@ Minsk, Belarus
 
 Backend engineer with 10+ years in PHP/Symfony and Python/Django.
 
-I build microservices at 21vek.by, one of the largest online retailers in Belarus. I work mostly in the cart and delivery domain: how a cart is assembled and priced, down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout. With the team I built 21vek Post, the company's new parcel-shipping service, where I worked on cost calculation for postal services and the data exchange with 1C. We also migrated the legacy CakePHP monolith to Next.js and built the backend for the auto-parts finder. I model each service around its business domain with Domain-Driven Design and own it end to end, from the domain model to production on Kubernetes.
+I build microservices at 21vek.by, one of the largest online retailers in Belarus, designing each around its business domain with Domain-Driven Design. I work mostly in the cart and delivery domain: how a cart is assembled and priced, down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout. With the team I built 21vek Post, the company's new parcel-shipping service, where I worked on cost calculation for postal services and the data exchange with 1C. We also migrated the legacy CakePHP monolith to Next.js and built the backend for the auto-parts finder.
 
 What I work with:
 • PHP 8, Symfony, MySQL, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ, Docker, Kubernetes
