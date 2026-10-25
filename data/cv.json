@@ -3,7 +3,7 @@
   "basics": {
     "name": "Dmitry Leiko",
     "headline": "Senior Backend Engineer · PHP / Python · Zend Certified Engineer",
-    "summary": "Backend engineer, 10+ years: PHP/Symfony and Python/Django. Building microservices for one of the largest online retailers in Belarus: I apply domain-driven design (DDD) and own a service from its domain model to production on Kubernetes.",
+    "summary": "Backend engineer, 10+ years: PHP/Symfony and Python/Django. Building microservices for one of the largest online retailers in Belarus, designed with domain-driven design (DDD).",
     "photo": "assets/photo.jpeg",
     "location": "Minsk, Belarus · Open to remote or relocation",
     "email": "dmitri.leiko@gmail.com",
