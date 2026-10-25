@@ -33,7 +33,7 @@ Jan 2023 – Present · Minsk, Belarus
 
 One of the largest online retailers in Belarus: electronics, appliances and a retail marketplace.
 
-• Build and maintain microservices end to end — domain model, service boundaries, code review, production support — each modelled around its business domain so it stays changeable as catalogue and order rules evolve.
+• Own microservices end to end, from domain model and service boundaries to code review and production.
 • Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.
 • Built 21vek Post, the company's new parcel-shipping service for individuals and businesses, with the team. My part: the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, plus much of the shipping-cost calculation for add-on services: limits, dependencies between services, redelivery fees and the bulky-item surcharge.
 • Built the service's two-way exchange with 1C: a transactional outbox publishing parcels to RabbitMQ, Kafka consumers for parcel updates and tariff reference data, and logging of every malformed message. Later added a second outbox for push notifications to senders.
@@ -72,7 +72,8 @@ Oct 2017 – Oct 2020 · Minsk, Belarus
 International software engineering and IT-consulting company.
 
 • Maintained and developed a customs duty and tax calculation system.
-• Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.
+• Built the markup for the system's UI blocks and components.
+• Built projects from scratch and extended existing ones for enterprise clients: designed and optimised MySQL databases, with builds and deployments running through Jenkins.
 • Supported WordPress/WooCommerce online stores.
 
 Skills: PHP · Symfony · Python · MySQL · WooCommerce · JavaScript · Jenkins · CI/CD
@@ -93,6 +94,7 @@ Feb 2012 – Feb 2015 · Minsk, Belarus
 Independent contracting for web studios and direct clients.
 
 • Turned PSD designs of varying complexity into page templates, from landing pages to multi-page company sites.
+• Built individual frontend components in JavaScript.
 
 Skills: HTML · CSS · JavaScript · Bootstrap
 

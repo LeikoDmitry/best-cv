@@ -35,7 +35,7 @@
       "to": "present",
       "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
       "bullets": [
-        "Build and maintain microservices end to end — domain model, service boundaries, code review, production support — each modelled around its business domain so it stays changeable as catalogue and order rules evolve.",
+        "Own microservices end to end, from domain model and service boundaries to code review and production.",
         "Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
         "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
         "With the team, moved the site from the CakePHP monolith to Next.js in stages — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.",
@@ -117,7 +117,8 @@
       "context": "International software engineering and IT-consulting firm.",
       "bullets": [
         "Maintained and developed a customs duty and tax calculation system.",
-        "Built projects from scratch and extended existing ones for enterprise clients, with builds and deployments running through Jenkins.",
+        "Built the markup for the system's UI blocks and components.",
+        "Built projects from scratch and extended existing ones for enterprise clients: designed and optimised MySQL databases, with builds and deployments running through Jenkins.",
         "Supported WordPress/WooCommerce online stores."
       ],
       "stack": [
@@ -159,7 +160,8 @@
       "to": "2015-02",
       "context": "Independent contracting for web studios and direct clients.",
       "bullets": [
-        "Turned PSD designs of varying complexity into page templates, from landing pages to multi-page company sites."
+        "Turned PSD designs of varying complexity into page templates, from landing pages to multi-page company sites.",
+        "Built individual frontend components in JavaScript."
       ],
       "stack": [
         "HTML",
@@ -169,26 +171,7 @@
       ]
     }
   ],
-  "projects": [
-    {
-      "name": "find-apartment",
-      "url": "https://github.com/LeikoDmitry/find-apartment",
-      "blurb": "Rental-listing scanner for Kufar and Realt.by that de-duplicates against SQLite and pushes only unseen listings to Telegram with photos and coordinates; price and room filters are changed live by chat command.",
-      "bullets": [
-        "Runs every 10 minutes; a second copy of the bot will not start while the first is running, so chat commands are not lost to Telegram 409 conflicts.",
-        "Typed and linted end to end, with tests and image publishing in CI on every push."
-      ],
-      "stack": [
-        "Python 3.12",
-        "SQLite",
-        "Telegram Bot API",
-        "Docker",
-        "GitHub Actions",
-        "mypy",
-        "Ruff"
-      ]
-    }
-  ],
+  "projects": [],
   "skills": [
     {
       "group": "Languages",
