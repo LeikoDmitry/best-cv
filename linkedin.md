@@ -34,10 +34,11 @@ Jan 2023 – Present · Minsk, Belarus
 One of the largest online retailers in Belarus: electronics, appliances and a retail marketplace.
 
 • Own microservices end to end, from domain model and service boundaries to code review and production.
-• Work mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.
+• Work in the purchase stream — two teams of ten engineers — mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.
+• Instrumented the purchase flow with product metrics: tracking events from cart and checkout through order confirmation, so funnel conversion and drop-off points are visible to the business.
 • Built 21vek Post, the company's new parcel-shipping service for individuals and businesses, with the team. My part: the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, plus much of the shipping-cost calculation for add-on services: limits, dependencies between services, redelivery fees and the bulky-item surcharge.
 • Built the service's two-way exchange with 1C: a transactional outbox publishing parcels to RabbitMQ, Kafka consumers for parcel updates and tariff reference data, and logging of every malformed message. Later added a second outbox for push notifications to senders.
-• With the team, moved the site from the CakePHP monolith to Next.js in stages — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.
+• With the team, moved the site from the CakePHP monolith to Next.js over six months of staged releases — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.
 • Built the auto-parts finder backend with the team: search by VIN or car model, a catalogue of assemblies with parts diagrams, originals and analogues; part cards are assembled from events across seven topics.
 • Use Claude Code day to day for code generation, review and getting into unfamiliar code, extended with my own skills and plugins and with tools wired in over MCP.
 • Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule.
