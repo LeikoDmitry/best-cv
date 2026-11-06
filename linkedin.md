@@ -9,7 +9,7 @@ Senior Backend Engineer · PHP / Symfony · Python · Microservices & DDD · Zen
 
 ## Location
 
-Warsaw, Poland
+Minsk, Belarus
 
 ## About
 
