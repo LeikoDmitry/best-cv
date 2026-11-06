@@ -22,7 +22,7 @@ What I work with:
 • Python, pandas and Airflow for analytics and data tooling
 • Claude Code day to day, extended with skills and plugins I write myself and with internal tools wired in over MCP
 
-Before 21vek.by: hoster.by, EffectiveSoft, Itransition and Zaochnik.com. I worked on customer-facing products, client projects and third-party API integrations, built Sphinx full-text search and an internal CRM at hoster.by, introduced Docker and CI/CD on client projects, and planned work for junior engineers.
+Before 21vek.by: hoster.by, EffectiveSoft, Itransition and Zaochnik.com. I worked on customer-facing products, client projects and third-party API integrations, built Sphinx full-text search and an internal CRM and sped up Bitrix pages at hoster.by, introduced Docker and CI/CD on client projects, and planned work for junior engineers.
 
 Zend Certified Engineer (2018). Open to remote roles or relocation.
 
@@ -111,7 +111,7 @@ Rental-listing scanner for Kufar and Realt.by. It de-duplicates against SQLite a
 
 Top 3 (pinned): PHP · Symfony · Domain-Driven Design
 
-Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · Sphinx · SQL · REST APIs · Laravel · CakePHP · Django · Next.js · pandas · Apache Airflow · Jenkins · CI/CD · Git · Grafana · Linux · SOLID · Vue.js · Claude Code
+Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · Sphinx · SQL · REST APIs · Laravel · CakePHP · Django · Bitrix · Next.js · pandas · Apache Airflow · Jenkins · CI/CD · Git · Grafana · Linux · SOLID · Vue.js · Claude Code
 
 ## Licenses & certifications
 
