@@ -9,7 +9,7 @@ Senior Backend Engineer · PHP / Symfony · Python · Microservices & DDD · Zen
 
 ## Location
 
-Minsk, Belarus
+Warsaw, Poland
 
 ## About
 
@@ -33,17 +33,18 @@ Jan 2023 – Present · Minsk, Belarus
 
 One of the largest online retailers in Belarus: electronics, appliances and a retail marketplace.
 
-• Own microservices end to end, from domain model and service boundaries to code review and production.
+• Own microservices end to end, from domain model and service boundaries to code review and production, including logging, metrics and Grafana alerts.
 • Work in the purchase stream — two teams of ten engineers — mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.
-• Instrumented the purchase flow with product metrics: tracking events from cart and checkout through order confirmation, so funnel conversion and drop-off points are visible to the business.
-• Built 21vek Post, the company's new parcel-shipping service for individuals and businesses, with the team. My part: the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, plus much of the shipping-cost calculation for add-on services: limits, dependencies between services, redelivery fees and the bulky-item surcharge.
-• Built the service's two-way exchange with 1C: a transactional outbox publishing parcels to RabbitMQ, Kafka consumers for parcel updates and tariff reference data, and logging of every malformed message. Later added a second outbox for push notifications to senders.
-• With the team, moved the site from the CakePHP monolith to Next.js over six months of staged releases — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.
-• Built the auto-parts finder backend with the team: search by VIN or car model, a catalogue of assemblies with parts diagrams, originals and analogues; part cards are assembled from events across seven topics.
-• Use Claude Code day to day for code generation, review and getting into unfamiliar code, extended with my own skills and plugins and with tools wired in over MCP.
-• Write analytics and data-processing tooling: reporting pipelines and ad-hoc analysis, run on a schedule.
+• Refine epics before development: clarify requirements and edge cases, map affected services and contracts, break the work into stories and tasks, and estimate with the team so risks surface before coding starts.
+• Instrumented the purchase flow with product metrics, from cart and checkout to order confirmation, so the business sees funnel conversion and drop-off points.
+• Built 21vek Post, the company's new parcel-shipping service, with the team. My part: the parcel-creation endpoint with domain invariants on weight, dimensions, declared value and cash on delivery, and much of the add-on services cost calculation: limits, service dependencies, redelivery fees and the bulky-item surcharge.
+• Built its two-way exchange with 1C: a transactional outbox to RabbitMQ, Kafka consumers for parcel updates and tariffs, and logging of malformed messages; later a second outbox for push notifications.
+• With the team, moved the site from the CakePHP monolith to Next.js over six months of staged releases, with HAProxy routing between old and new code.
+• Built the auto-parts finder backend with the team: search by VIN or car model, assembly diagrams, originals and analogues; part cards are assembled from events across seven topics.
+• Use Claude Code day to day for code generation, review and exploring unfamiliar code, extended with my own skills, plugins and MCP tools.
+• Write analytics tooling: scheduled reporting pipelines and ad-hoc analysis.
 
-Skills: PHP · Python · pandas · Apache Airflow · Symfony · CakePHP · MySQL · PostgreSQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Docker · Next.js · Domain-Driven Design
+Skills: PHP · Python · pandas · Apache Airflow · Symfony · CakePHP · MySQL · PostgreSQL · MongoDB · Redis · Kafka · RabbitMQ · Kubernetes · Docker · Grafana · Next.js · Domain-Driven Design
 
 ### Senior Backend Developer — hoster.by
 Oct 2021 – Jan 2023 · Minsk, Belarus
@@ -53,8 +54,10 @@ Belarusian hosting, domain and cloud-services provider.
 • Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.
 • Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.
 • Set up, tuned and integrated Sphinx full-text search into the services.
+• Sped up Bitrix pages: reworked heavy database queries and how page blocks are rendered.
+• Set up service logging and Grafana alerts on key metrics: errors, latency and availability.
 
-Skills: PHP · MySQL · ClickHouse · Sphinx · Redis · REST APIs · Vue.js · Docker
+Skills: PHP · MySQL · ClickHouse · Sphinx · Bitrix · Redis · REST APIs · Vue.js · Grafana · Docker
 
 ### Senior Backend Developer — EffectiveSoft
 Oct 2020 – Oct 2021 · Minsk, Belarus
@@ -73,21 +76,19 @@ Oct 2017 – Oct 2020 · Minsk, Belarus
 International software engineering and IT-consulting company.
 
 • Maintained and developed a customs duty and tax calculation system.
-• Built the markup for the system's UI blocks and components.
 • Built projects from scratch and extended existing ones for enterprise clients: designed and optimised MySQL databases, with builds and deployments running through Jenkins.
-• Supported WordPress/WooCommerce online stores.
 
 Skills: PHP · Symfony · Python · MySQL · WooCommerce · JavaScript · Jenkins · CI/CD
 
-### PHP Developer — Zaochnik.com
+### Backend Developer — Zaochnik.com
 Nov 2015 – Oct 2017 · Minsk, Belarus
 
 Online education marketplace.
 
-• Supported the company's products and resolved production failures promptly.
-• Connected external services over APIs.
+• Built the service's server side: APIs for the customer and author account areas, and background order processing.
+• Integrated payment and partner APIs over REST/JSON and SOAP/XML; made payment notification handling idempotent, with retries on provider failures.
 
-Skills: PHP · Laminas · MySQL · Python · Django · WordPress
+Skills: PHP · Laminas · Python · Django · Django REST Framework · Celery · MySQL · SOAP · WordPress
 
 ### Frontend Developer — Freelance
 Feb 2012 – Feb 2015 · Minsk, Belarus
@@ -95,9 +96,9 @@ Feb 2012 – Feb 2015 · Minsk, Belarus
 Independent contracting for web studios and direct clients.
 
 • Turned PSD designs of varying complexity into page templates, from landing pages to multi-page company sites.
-• Built individual frontend components in JavaScript.
+• Built frontend components in JavaScript, and wrote and extended jQuery plugins.
 
-Skills: HTML · CSS · JavaScript · Bootstrap
+Skills: HTML · CSS · JavaScript · jQuery · Bootstrap
 
 ## Projects
 
@@ -110,7 +111,7 @@ Rental-listing scanner for Kufar and Realt.by. It de-duplicates against SQLite a
 
 Top 3 (pinned): PHP · Symfony · Domain-Driven Design
 
-Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · Sphinx · SQL · REST APIs · Laravel · CakePHP · Django · Next.js · pandas · Apache Airflow · Jenkins · CI/CD · Git · Linux · SOLID · Vue.js · Claude Code
+Rest: Python · Microservices · Kafka · Kubernetes · Docker · MySQL · PostgreSQL · MongoDB · RabbitMQ · Redis · ClickHouse · Sphinx · SQL · REST APIs · Laravel · CakePHP · Django · Next.js · pandas · Apache Airflow · Jenkins · CI/CD · Git · Grafana · Linux · SOLID · Vue.js · Claude Code
 
 ## Licenses & certifications
 

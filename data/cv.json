@@ -5,9 +5,9 @@
     "headline": "Senior Backend Engineer · PHP / Python · Zend Certified Engineer",
     "summary": "Backend engineer, 10+ years: PHP/Symfony and Python/Django. Building microservices for one of the largest online retailers in Belarus, designed with domain-driven design (DDD).",
     "photo": "assets/photo.jpeg",
-    "location": "Minsk, Belarus · Open to remote or relocation",
+    "location": "Warsaw, Poland · Open to remote or relocation",
     "email": "dmitri.leiko@gmail.com",
-    "phone": "+375 29 578-4884",
+    "phone": "+48 511 439 649",
     "links": [
       {
         "label": "GitHub",
@@ -35,8 +35,9 @@
       "to": "present",
       "context": "One of the largest online retailers in Belarus — electronics, appliances and a retail marketplace.",
       "bullets": [
-        "Own microservices end to end, from domain model and service boundaries to code review and production.",
+        "Own microservices end to end, from domain model and service boundaries to code review and production, including logging, metrics and Grafana alerts.",
         "Work in the purchase stream — two teams of ten engineers — mostly in the cart and delivery domain: how a cart is assembled and priced down to promo-code discounts, and which delivery methods and time slots a customer is offered at checkout.",
+        "Refine epics before development starts: clarify requirements and edge cases, map the affected services, integrations and the contracts between them, break the work down into stories and technical tasks, and estimate them with the team so risks and dependencies surface before any code is written.",
         "Instrumented the purchase flow with product metrics: tracking events from cart and checkout through order confirmation, so funnel conversion and drop-off points are visible to the business.",
         "Built 21vek Post, a new parcel-shipping service, with the team: parcel creation, shipping-cost calculation for add-on services, and a two-way exchange with 1C through a transactional outbox and message brokers.",
         "With the team, moved the site from the CakePHP monolith to Next.js over six months of staged releases — home, listings, product card, pickup, order history — with HAProxy routing between old and new code.",
@@ -59,6 +60,7 @@
         "RabbitMQ",
         "Kubernetes",
         "Docker",
+        "Grafana",
         "Next.js",
         "DDD"
       ]
@@ -73,16 +75,20 @@
       "bullets": [
         "Extended the customer account area and the internal CRM: management of services, hosting and domains, plus website monitoring.",
         "Integrated third-party APIs with internal services, keeping provider changes isolated from the products that depended on them.",
-        "Set up, tuned and integrated Sphinx full-text search into the services."
+        "Set up, tuned and integrated Sphinx full-text search into the services.",
+        "Sped up Bitrix pages: reworked heavy database queries and how page blocks are rendered.",
+        "Set up service logging and Grafana alerts on key metrics: errors, latency and availability."
       ],
       "stack": [
         "PHP",
         "MySQL",
         "ClickHouse",
         "Sphinx",
+        "Bitrix",
         "Redis",
         "REST API",
         "Vue.js",
+        "Grafana",
         "Docker"
       ]
     },
@@ -118,9 +124,7 @@
       "context": "International software engineering and IT-consulting firm.",
       "bullets": [
         "Maintained and developed a customs duty and tax calculation system.",
-        "Built the markup for the system's UI blocks and components.",
-        "Built projects from scratch and extended existing ones for enterprise clients: designed and optimised MySQL databases, with builds and deployments running through Jenkins.",
-        "Supported WordPress/WooCommerce online stores."
+        "Built projects from scratch and extended existing ones for enterprise clients: designed and optimised MySQL databases, with builds and deployments running through Jenkins."
       ],
       "stack": [
         "PHP",
@@ -135,21 +139,24 @@
     },
     {
       "company": "Zaochnik.com",
-      "role": "PHP Developer",
+      "role": "Backend Developer",
       "location": "Minsk",
       "from": "2015-11",
       "to": "2017-10",
       "context": "Online education marketplace.",
       "bullets": [
-        "Supported the company's products and resolved production failures promptly.",
-        "Connected external services over APIs."
+        "Built the service's server side: APIs for the customer and author account areas, and background order processing.",
+        "Integrated payment and partner APIs over REST/JSON and SOAP/XML; made payment notification handling idempotent, with retries on provider failures."
       ],
       "stack": [
         "PHP",
         "Laminas",
-        "MySQL",
         "Python",
         "Django",
+        "DRF",
+        "Celery",
+        "MySQL",
+        "SOAP",
         "WordPress"
       ]
     },
@@ -162,12 +169,13 @@
       "context": "Independent contracting for web studios and direct clients.",
       "bullets": [
         "Turned PSD designs of varying complexity into page templates, from landing pages to multi-page company sites.",
-        "Built individual frontend components in JavaScript."
+        "Built frontend components in JavaScript, and wrote and extended jQuery plugins."
       ],
       "stack": [
         "HTML",
         "CSS",
         "JavaScript",
+        "jQuery",
         "Bootstrap"
       ]
     }
