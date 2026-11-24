@@ -1,0 +1,8 @@
+# Keep LF in the repo and in the working tree, even when edited from Windows.
+* text=auto eol=lf
+
+*.pdf binary
+*.ttf binary
+*.jpeg binary
+*.jpg binary
+*.png binary
